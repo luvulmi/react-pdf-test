@@ -1,0 +1,56 @@
+
+.modal-pdf {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-pdf .react-pdf__Document {
+  width: 100%;
+  height: 100%;
+}
+
+.react-pdf_Page {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.react-pdf___Document canvas {
+  margin: 0 auto;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+}
+
+.modal-pdf .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.modal-pdf p,
+.modal-pdf span {
+  color: #fff;
+  bottom: 2rem;
+}
+
+.modal-pdf p {
+  display: flex;
+  gap: 2rem;
+}
+
+.react-pdf___Page__annotations.annotationLayer {
+  width: 100% !important;
+  height: 100% !important;
+  display: none;
+}
